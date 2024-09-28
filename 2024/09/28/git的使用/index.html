@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://aaronxwz.github.io/archives/2024/09/"/>
+  
+  <link rel="canonical" href="https://aaronxwz.github.io/2024/09/28/git的使用/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -27,24 +27,27 @@
   <!-- Custom Files headBegin end-->
   <!-- front-matter head_begin begin -->
   <!-- front-matter head_begin end -->
-  <link rel="preload" href="../../../css/style.css" as="style">
+  <link rel="preload" href="../../../../css/style.css" as="style">
   <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>归档：2024/9 - 许老师的笔记</title>
-  <meta name="keywords" content="null">
+  <title>git的使用 - 许老师的笔记</title>
+  <meta name="keywords" content="git,null">
   <meta desc name="description" content="技术小站 - John Doe - 许老师的笔记">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="许老师的笔记">
-<meta property="og:url" content="https://aaronxwz.github.io/archives/2024/09/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git的使用">
+<meta property="og:url" content="https://aaronxwz.github.io/2024/09/28/git%E7%9A%84%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="许老师的笔记">
-<meta property="og:description" content="技术小站">
+<meta property="og:description" content="git简介git的诞生1991年 Linus开创了开源的Linux 2002年以前  Linus手动合并代码 2002年 BitKeeper免费授权 2005年 BitKeeper被尝试破解，收回授权 2005年 Linus花了两周时间用C写出了git，并且一个月之内将Linux搬迁到git上 2008年 GitHub上线 集中式与分布式集中式 ​	CVS、SVN 分布式 ​	Git Git安装g">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2024-09-28T08:33:25.000Z">
+<meta property="article:modified_time" content="2024-09-28T08:33:15.345Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -1667,8 +1670,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="../../../css/style.css" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="../../../css/style.css"></noscript>
+  <link rel="stylesheet" href="../../../../css/style.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="../../../../css/style.css"></noscript>
   
 <script>
 if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode))
@@ -1740,7 +1743,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: "env",
-    cdn: {"js":{"app":"../../../js/app.js","parallax":"../../../js/plugins/parallax.js","rightMenu":"../../../js/plugins/rightMenu.js","rightMenus":"../../../js/plugins/rightMenus.js","sites":"../../../js/plugins/tags/sites.js","friends":"../../../js/plugins/tags/friends.js","contributors":"../../../js/plugins/tags/contributors.js","search":"../../../js/search/hexo.js"},"css":{"style":"../../../css/style.css"}},
+    cdn: {"js":{"app":"../../../../js/app.js","parallax":"../../../../js/plugins/parallax.js","rightMenu":"../../../../js/plugins/rightMenu.js","rightMenus":"../../../../js/plugins/rightMenus.js","sites":"../../../../js/plugins/tags/sites.js","friends":"../../../../js/plugins/tags/friends.js","contributors":"../../../../js/plugins/tags/contributors.js","search":"../../../../js/search/hexo.js"},"css":{"style":"../../../../css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
     lastupdate: new Date(1727512700354),
     sidebar: {
@@ -2170,7 +2173,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin end-->
     <!-- front-matter body_begin begin -->
     <!-- front-matter body_begin end -->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2185,7 +2188,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		<div class="nav-main">
       
         
-        <a class="title flat-box" target="_self" href='../../../index.html'>
+        <a class="title flat-box" target="_self" href='../../../../index.html'>
           
             <img no-lazy class='logo' src='https://iproute.cn/medias/logo.png'/>
           
@@ -2205,7 +2208,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="../../../index.html" title="博客"
+                href="../../../../index.html" title="博客"
                   
                   
                   
@@ -2222,7 +2225,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="../../../categories/" title="分类"
+                href="../../../../categories/" title="分类"
                   
                   
                   
@@ -2239,7 +2242,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="../../../tags/" title="标签"
+                href="../../../../tags/" title="标签"
                   
                   
                   
@@ -2256,11 +2259,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="../../" title="归档"
+                href="../../../../archives/" title="归档"
                   
                   
                   
-                    active-action="action-home"
+                    active-action="action-archives"
                   >
                   <i class='fa-solid fa-archive fa-fw'></i>归档
                 </a>
@@ -2273,7 +2276,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="../../../friends/" title="友链"
+                href="../../../../friends/" title="友链"
                   
                   
                   
@@ -2290,7 +2293,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="../../../about/" title="关于"
+                href="../../../../about/" title="关于"
                   
                   
                   
@@ -2326,7 +2329,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="../../../index.html" title="博客"
+                href="../../../../index.html" title="博客"
                   
                   
                   
@@ -2343,7 +2346,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="../../../categories/" title="分类"
+                href="../../../../categories/" title="分类"
                   
                   
                   
@@ -2360,7 +2363,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="../../../tags/" title="标签"
+                href="../../../../tags/" title="标签"
                   
                   
                   
@@ -2377,11 +2380,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="../../" title="归档"
+                href="../../../../archives/" title="归档"
                   
                   
                   
-                    active-action="action-home"
+                    active-action="action-archives"
                   >
                   <i class='fa-solid fa-archive fa-fw'></i>归档
                 </a>
@@ -2394,7 +2397,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="../../../friends/" title="友链"
+                href="../../../../friends/" title="友链"
                   
                   
                   
@@ -2411,7 +2414,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="../../../about/" title="关于"
+                href="../../../../about/" title="关于"
                   
                   
                   
@@ -2441,7 +2444,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  dock' style="display: ;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://api.vvhan.com/api/bing?rand=sj"></div>
 
@@ -2458,35 +2461,35 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div class='list-h'>
         
           
-            <a href="../../../v4/getting-started/"
+            <a href="../../../../v4/getting-started/"
               
               
               active-action="action-v4getting-started">
               <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f5c3.svg'><p>文档</p>
             </a>
           
-            <a href="../../../faqs/"
+            <a href="../../../../faqs/"
               
               
               active-action="action-faqs">
               <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f516.svg'><p>帮助</p>
             </a>
           
-            <a href="../../../examples/"
+            <a href="../../../../examples/"
               
               
               active-action="action-examples">
               <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f396.svg'><p>示例</p>
             </a>
           
-            <a href="../../../contributors/"
+            <a href="../../../../contributors/"
               
               
               active-action="action-contributors">
               <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f389.svg'><p>社区</p>
             </a>
           
-            <a href="../../../archives/"
+            <a href="../../../../archives/"
               
               
               active-action="action-archives">
@@ -2516,23 +2519,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
   <link itemprop="mainEntityOfPage" href="https://aaronxwz.github.io/2024/09/28/git的使用/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="许老师的笔记">
@@ -2542,131 +2529,470 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="技术小站">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="../../../2024/09/28/git%E7%9A%84%E4%BD%BF%E7%94%A8/"  itemprop="url">
+    
+    
+      <h1 class="title" itemprop="name headline">
         git的使用
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">请设置文章作者</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="../../../../categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/">编程开发</a>
     
-      
-        git简介git的诞生1991年 Linus开创了开源的Linux
-2002年以前  Linus手动合并代码
-2002年 BitKeeper免费授权
-2005年 BitKeeper被尝试破解，收回授权
-2005年 Linus花了两周时间用C写出了git，并且一个月之内将Linux搬迁到git上
-2008年 GitHub上线
-集中式与分布式集中式
-​	CVS、SVN
-分布式
-​	Git
-Git...
-      
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="../../../../categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/" itemprop="url"><span itemprop="name">编程开发</span></a>
+      </span>
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-28T16:33:25+08:00">2024-09-28</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="../../../categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/">编程开发</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="../../../categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/" itemprop="url"><span itemprop="name">编程开发</span></a>
-            </span>
+
+
           
         
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-09-28T16:33:25+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2024年9月28日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h1 id="git简介"><a href="#git简介" class="headerlink" title="git简介"></a>git简介</h1><h2 id="git的诞生"><a href="#git的诞生" class="headerlink" title="git的诞生"></a>git的诞生</h2><p>1991年 Linus开创了开源的Linux</p>
+<p>2002年以前  Linus手动合并代码</p>
+<p>2002年 BitKeeper免费授权</p>
+<p>2005年 BitKeeper被尝试破解，收回授权</p>
+<p>2005年 Linus花了两周时间用C写出了git，并且一个月之内将Linux搬迁到git上</p>
+<p>2008年 GitHub上线</p>
+<h2 id="集中式与分布式"><a href="#集中式与分布式" class="headerlink" title="集中式与分布式"></a>集中式与分布式</h2><p>集中式</p>
+<p>​	CVS、SVN</p>
+<p>分布式</p>
+<p>​	Git</p>
+<h1 id="Git安装"><a href="#Git安装" class="headerlink" title="Git安装"></a>Git安装</h1><p>git最新版本，没有安装包的话，去官方地址下载<a target="_blank" rel="noopener" href="https://github.com/git-for-windows/git/releases/download/v2.23.0.windows.1/Git-2.23.0-64-bit.exe">https://github.com/git-for-windows/git/releases/download/v2.23.0.windows.1/Git-2.23.0-64-bit.exe</a></p>
+<p>一路next直到安装完毕，保持默认的选项</p>
+<p>安装完毕后，打开windows的<code>cmd</code> 命令界面，输入如下命令，来设置自己的用户名和邮箱。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;Aaron&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;Aaron@eagleslab.com&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h1><p>版本库又名仓库，英文名<strong>repository</strong> ，你可以简单的解成一个目录，这个目录里面的所有文件都可以被Git管理起来，每个文件的修改、删除，Git都能跟踪，以便任何时刻都可以追踪历史，或者在将来某个时刻可以“还原”。</p>
+<p><strong>第一步</strong> 找个空的地方创建一个文件夹</p>
+<p><strong>第二步</strong> 在文件夹中打开<code>cmd</code>界面，然后输入<code>git init</code> 命令把这个目录变成Git可以管理的仓库 </p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026205132429.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026205132429.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026205132429"></p>
+<p>我们也可以发现，在这个文件夹中会创建一个<code>.git</code>的目录， 这个目录是Git来跟踪管理版本库的 </p>
+<h2 id="添加文件到版本库"><a href="#添加文件到版本库" class="headerlink" title="添加文件到版本库"></a>添加文件到版本库</h2><p>这边要注意，git只能追踪文本文件的改动，而二进制文件只能记录大小的变化。</p>
+<p><strong>第一步</strong> </p>
+<ul>
+<li>在我们的git文件夹中创建一个记事本文件，不过注意，千万别用windows自带的记事本编辑内容！</li>
+<li>在记事本文件中写一些内容，比如<code>学前沿IT，到英格科技</code> </li>
+<li>使用命令<code>git add</code>告诉git，把文件添加到暂存区中</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add readme.txt</span><br></pre></td></tr></table></figure>
+
+<p>执行上面的命令，没有任何显示</p>
+<p><strong>第二步</strong></p>
+<p>用命令<code>git commit</code>告诉Git，把文件提交到仓库</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\Aaron\Desktop\gitlearn&gt;git commit -m &quot;write a readme file&quot;</span><br><span class="line">[master (root-commit) 4121352] write a readme file</span><br><span class="line"> 1 file changed, 1 insertions(+)</span><br><span class="line"> create mode 100644 readme.txt</span><br></pre></td></tr></table></figure>
+
+<p><code>git commit</code>后面的<code>-m</code>是输入本次提交的说明的，可以输入任何内容，最好是自己能看懂的，这样就可以从理事会记录里面方便的找到改动记录。</p>
+<p>执行成功后<code>1 file changed</code> 一个文件被改动了，也就是我们添加的<code>readme.txt</code></p>
+<p><code>1 insertions(+)</code>表示插入了一行内容，我们写的那个<code>学前沿IT，到英格科技</code></p>
+<p><strong>注意</strong></p>
+<p>因为在<code>commit</code>前需要<code>add</code>一下，所以可以一次提交多个文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\Aaron\Desktop\gitlearn&gt;git add file1.txt</span><br><span class="line">C:\Users\Aaron\Desktop\gitlearn&gt;git add file2.txt</span><br><span class="line">C:\Users\Aaron\Desktop\gitlearn&gt;git commit -m <span class="string">&quot;two files&quot;</span></span><br><span class="line">[master dc43809] two files</span><br><span class="line"> 2 files changed, 2 insertions(+)</span><br><span class="line"> create mode 100644 file1.txt</span><br><span class="line"> create mode 100644 file2.txt</span><br></pre></td></tr></table></figure>
+
+<h1 id="回滚操作"><a href="#回滚操作" class="headerlink" title="回滚操作"></a>回滚操作</h1><p>我们修改上面的文件<code>readme.txt</code></p>
+<p>然后使用<code>git status</code>查看</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\Aaron\Desktop\gitlearn&gt;git status</span><br><span class="line">On branch master</span><br><span class="line">Changes not staged <span class="keyword">for</span> commit:</span><br><span class="line">  (use <span class="string">&quot;git add &lt;file&gt;...&quot;</span> to update what will be committed)</span><br><span class="line">  (use <span class="string">&quot;git checkout -- &lt;file&gt;...&quot;</span> to discard changes <span class="keyword">in</span> working directory)</span><br><span class="line"></span><br><span class="line">        modified:   readme.txt</span><br><span class="line"></span><br><span class="line">no changes added to commit (use <span class="string">&quot;git add&quot;</span> and/or <span class="string">&quot;git commit -a&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p> <code>git status</code>命令可以让我们时刻掌握仓库当前的状态，上面的命令输出告诉我们，<code>readme.txt</code>被修改过了，但还没有准备提交的修改。 </p>
+<p>如果想看看具体修改了什么内容，我们可以使用<code>git diff</code>来查看</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026211316876.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026211316876.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026211316876"></p>
+<p>可以看到在第一行后面加了一个换行符，然后加了一行在下面</p>
+<p>下面我们将其添加，然后查看<code>status</code></p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026211507764.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026211507764.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026211507764"></p>
+<p> <code>git status</code>告诉我们，将要被提交的修改包括<code>readme.txt</code>，下一步，就可以放心地提交了 </p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026211724339.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026211724339.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026211724339"></p>
+<p>提交后，我们再用<code>git status</code>命令看看仓库的当前状态：</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026211757079.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026211757079.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026211757079"></p>
+<p> Git告诉我们当前没有需要提交的修改，而且，工作目录是干净（working tree clean）的 </p>
+<h2 id="版本回退"><a href="#版本回退" class="headerlink" title="版本回退"></a>版本回退</h2><p>我们创建一个文件叫<code>game</code> ，在这个文件中写入以下内容</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">屠龙勇士村来了一个新勇士叫&quot;林克&quot;</span><br></pre></td></tr></table></figure>
+
+<p>然后提交，提交的说明就是”新的开始”</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026212115336.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026212115336.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026212115336"></p>
+<p>在文件中追加内容</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">勇士赤手空拳来到了野外</span><br></pre></td></tr></table></figure>
+
+<p>然后提交，提交的说明就是”走出新手村”</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026212310506.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026212310506.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026212310506"></p>
+<p>在文件中追加内容</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">勇士林克被Lv1怪物史莱姆一屁股坐死</span><br></pre></td></tr></table></figure>
+
+<p>然后提交，提交的说明就是”阵亡”</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026212439959.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026212439959.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026212439959"></p>
+<p>在文件中追加内容</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">勇士林克被公主&quot;塞尔达&quot;所救，丢失全部金币！</span><br></pre></td></tr></table></figure>
+
+<p>然后提交，提交的说明就是”复活”</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026212614476.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026212614476.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026212614476"></p>
+<p>下面我们来看下这个悲催的勇士的经历，可以使用<code>git log</code>查看历史提交</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026212755780.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026212755780.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026212755780"></p>
+<p> <code>git log</code>命令显示从最近到最远的提交日志，我们可以看到3次提交 </p>
+<p> 如果嫌输出信息太多，看得眼花缭乱的，可以试试加上<code>--pretty=oneline</code>参数 </p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026212850868.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026212850868.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026212850868"></p>
+<p>其实勇士的悲剧完全可以逆转，我们可以<strong>读档</strong>到<code>新的开始</code>，让勇士在出门前带把武器</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026213156010.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026213156010.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026213156010"></p>
+<p> Git的版本回退速度非常快，因为Git在内部有个指向当前版本的<code>HEAD</code>指针，当你回退版本的时候，Git仅仅是把HEAD从指向<code>新的开始</code>： </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">┌────┐</span><br><span class="line">│HEAD│</span><br><span class="line">└────┘</span><br><span class="line">   │</span><br><span class="line">   └──&gt; ○ 复活</span><br><span class="line">        │</span><br><span class="line">        ○ 阵亡</span><br><span class="line">        │</span><br><span class="line">        ○ 走出新手村</span><br><span class="line">        │</span><br><span class="line">        ○ 新的开始</span><br></pre></td></tr></table></figure>
+
+<p>改为指向<code>add distributed</code>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">┌────┐</span><br><span class="line">│HEAD│</span><br><span class="line">└────┘</span><br><span class="line">   │</span><br><span class="line">   │   ○ 复活</span><br><span class="line">   │   │</span><br><span class="line">   │   ○ 阵亡</span><br><span class="line">   │   │</span><br><span class="line">   │   ○ 走出新手村</span><br><span class="line">   │   │</span><br><span class="line">   └──&gt;○ 新的开始</span><br></pre></td></tr></table></figure>
+
+<p> 在Git中，用<code>HEAD</code>表示当前版本，上一个版本就是<code>HEAD^</code>，上上一个版本就是<code>HEAD^^</code>，当然往上100个版本写100个<code>^</code>比较容易数不过来，所以写成<code>HEAD~100</code>。 </p>
+<p> Git提供了一个命令<code>git reflog</code>用来记录你的每一次命令：</p>
+<h2 id="工作区和暂存区"><a href="#工作区和暂存区" class="headerlink" title="工作区和暂存区"></a>工作区和暂存区</h2><h3 id="工作区"><a href="#工作区" class="headerlink" title="工作区"></a>工作区</h3><p>就是你在电脑里能看到的目录，比如上面的<code>gitlearn</code>文件夹</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026213858444.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026213858444.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026213858444"></p>
+<h3 id="版本库"><a href="#版本库" class="headerlink" title="版本库"></a>版本库</h3><p> 工作区有一个隐藏目录<code>.git</code>，这个不算工作区，而是Git的版本库。 </p>
+<p> Git的版本库里存了很多东西，其中最重要的就是称为stage（或者叫index）的暂存区，还有Git为我们自动创建的第一个分支<code>master</code>，以及指向<code>master</code>的一个指针叫<code>HEAD</code>。 </p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026214144680.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026214144680.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026214144680"></p>
+<p>前面讲了我们把文件往Git版本库里添加的时候，是分两步执行的：</p>
+<p>第一步是用<code>git add</code>把文件添加进去，实际上就是把文件修改添加到暂存区；</p>
+<p>第二步是用<code>git commit</code>提交更改，实际上就是把暂存区的所有内容提交到当前分支。</p>
+<p>因为我们创建Git版本库时，Git自动为我们创建了唯一一个<code>master</code>分支，所以，现在，<code>git commit</code>就是往<code>master</code>分支上提交更改。</p>
+<p>你可以简单理解为，需要提交的文件修改通通放到暂存区，然后，一次性提交暂存区的所有修改。</p>
+<h2 id="管理修改"><a href="#管理修改" class="headerlink" title="管理修改"></a>管理修改</h2><p>git不是管理文件，而是管理修改的操作。</p>
+<p>我们修改readme.txt，然后add提交到暂存区</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026214759593.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026214759593.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026214759593"></p>
+<p>然后再次修改readme.txt，这次我们直接commit</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026214923112.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026214923112.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026214923112"></p>
+<p>然后查看状态</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026214953282.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026214953282.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026214953282"></p>
+<p>我们会发现第二次修改的并没有被提交</p>
+<p>查看一下工作区的文件和仓库的文件的区别</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026215100477.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026215100477.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026215100477"></p>
+<h2 id="撤销修改"><a href="#撤销修改" class="headerlink" title="撤销修改"></a>撤销修改</h2><ul>
+<li><p>当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令<code>git checkout -- file</code>。</p>
+</li>
+<li><p>当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令<code>git reset HEAD </code>，就回到了上一种情况，第二步按上一种情况操作操作。</p>
+</li>
+</ul>
+<h2 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h2><p>我们将文件从工作区删除</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026220634410.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026220634410.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026220634410"></p>
+<p>git会直接察觉到我们的删除操作，如果这个时候提交，那么就会从版本库中删除该文件</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026220737779.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026220737779.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026220737779"></p>
+<p>但是如果误删除了，可以还原到版本库中的最新版本</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026220846139.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026220846139.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026220846139"></p>
+<p>如果要删除暂存区中的文件，可以使用<code>git rm</code></p>
+<h1 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h1><p>注册github</p>
+<p>打开命令行，创建key</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026222146813.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026222146813.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026222146813"></p>
+<p>打开github的个人用户设置</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026222232810.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026222232810.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026222232810"></p>
+<p>在里面找到<code>SSH and GPG keys</code></p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026222304248.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026222304248.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026222304248"></p>
+<p>新建一个ssh keys</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026222341875.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026222341875.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026222341875"></p>
+<p>然后按照下图提示填写</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026222527219.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026222527219.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026222527219"></p>
+<p>然后你就成功添加了ssh的key，下次登录github的时候，就会直接被识别出你的身份啦</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026222731981.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026222731981.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026222731981"></p>
+<h2 id="添加远程仓库"><a href="#添加远程仓库" class="headerlink" title="添加远程仓库"></a>添加远程仓库</h2><p>首先回到登录之后的页面</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026222810944.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026222810944.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026222810944"></p>
+<p>创建你的仓库</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026222939132.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026222939132.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026222939132"></p>
+<p>根据这边的提示可以将我们本地的仓库和远程的仓库关联起来哦</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026223058803.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026223058803.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026223058803"></p>
+<p>推送成功的画面</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026223328983.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026223328983.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026223328983"></p>
+<p>观察到远程仓库和我们本地仓库已经关联一致</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026223401158.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191026223401158.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191026223401158"></p>
+<p>要关联一个远程库，使用命令<code>git remote add origin git@server-name:path/repo-name.git</code>；</p>
+<p>关联后，使用命令<code>git push -u origin master</code>第一次推送master分支的所有内容；</p>
+<p>此后，每次本地提交后，只要有必要，就可以使用命令<code>git push origin master</code>推送最新修改；</p>
+<h2 id="从远程仓库克隆"><a href="#从远程仓库克隆" class="headerlink" title="从远程仓库克隆"></a>从远程仓库克隆</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone &lt;地址&gt;</span><br></pre></td></tr></table></figure>
+
+<h1 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h1><h2 id="创建与合并分支"><a href="#创建与合并分支" class="headerlink" title="创建与合并分支"></a>创建与合并分支</h2><p> 一开始的时候，<code>master</code>分支是一条线，Git用<code>master</code>指向最新的提交，再用<code>HEAD</code>指向<code>master</code>，就能确定当前分支，以及当前分支的提交点： </p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027123341011.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027123341011.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027123341011"></p>
+<p>每次提交，<code>master</code>分支都会向前移动一步，这样，随着你不断提交，<code>master</code>分支的线也越来越长。</p>
+<p>当我们创建新的分支，例如<code>dev</code>时，Git新建了一个指针叫<code>dev</code>，指向<code>master</code>相同的提交，再把<code>HEAD</code>指向<code>dev</code>，就表示当前分支在<code>dev</code>上：</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027123400412.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027123400412.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027123400412"></p>
+<p>你看，Git创建一个分支很快，因为除了增加一个<code>dev</code>指针，改改<code>HEAD</code>的指向，工作区的文件都没有任何变化！</p>
+<p>不过，从现在开始，对工作区的修改和提交就是针对<code>dev</code>分支了，比如新提交一次后，<code>dev</code>指针往前移动一步，而<code>master</code>指针不变：</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027123426946.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027123426946.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027123426946"></p>
+<p> 假如我们在<code>dev</code>上的工作完成了，就可以把<code>dev</code>合并到<code>master</code>上。Git怎么合并呢？最简单的方法，就是直接把<code>master</code>指向<code>dev</code>的当前提交，就完成了合并： </p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027123523590.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027123523590.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027123523590"></p>
+<p>合并完分支后，甚至可以删除<code>dev</code>分支。删除<code>dev</code>分支就是把<code>dev</code>指针给删掉，删掉后，我们就剩下了一条<code>master</code>分支：</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027123606591.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027123606591.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027123606591"></p>
+<p> 首先，我们创建<code>dev</code>分支，然后切换到<code>dev</code>分支： </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ubuntu@DESKTOP-HQ0R9B5:/mnt/c/Users/Aaron/Desktop/learngit$ git checkout -b dev</span><br><span class="line">Switched to a new branch <span class="string">&#x27;dev&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p> <code>git checkout</code>命令加上<code>-b</code>参数表示创建并切换，相当于以下两条命令： </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git branch dev</span><br><span class="line">$ git checkout dev</span><br><span class="line">Switched to branch <span class="string">&#x27;dev&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p> 然后，用<code>git branch</code>命令查看当前分支： </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ubuntu@DESKTOP-HQ0R9B5:/mnt/c/Users/Aaron/Desktop/learngit$ git branch</span><br><span class="line">* dev</span><br><span class="line">  master</span><br></pre></td></tr></table></figure>
+
+<p><code>git branch</code>命令会列出所有分支，当前分支前面会标一个<code>*</code>号。</p>
+<p>然后，我们就可以在<code>dev</code>分支上正常提交，比如对<code>readme.txt</code>做个修改，加上一行。</p>
+<p>然后提交</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027124746947.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027124746947.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027124746947"></p>
+<p> 切换回<code>master</code>分支后，再查看一个<code>readme.txt</code>文件，刚才添加的内容不见了！因为那个提交是在<code>dev</code>分支上，而<code>master</code>分支此刻的提交点并没有变 </p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027124809015.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027124809015.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027124809015"></p>
+<p> 现在，我们把<code>dev</code>分支的工作成果合并到<code>master</code>分支上： </p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027124912044.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027124912044.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027124912044"></p>
+<p><code>git merge</code>命令用于合并指定分支到当前分支。合并后，再查看<code>readme.txt</code>的内容，就可以看到，和<code>dev</code>分支的最新提交是完全一样的。</p>
+<p>注意到上面的<code>Fast-forward</code>信息，Git告诉我们，这次合并是“快进模式”，也就是直接把<code>master</code>指向<code>dev</code>的当前提交，所以合并速度非常快。</p>
+<p> 合并完成后，就可以放心地删除<code>dev</code>分支了： </p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027125002911.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027125002911.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027125002911"></p>
+<p> 删除后，查看<code>branch</code>，就只剩下<code>master</code>分支了： </p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027125038982.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027125038982.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027125038982"></p>
+<h3 id="switch"><a href="#switch" class="headerlink" title="switch"></a>switch</h3><p> 最新版本的Git提供了新的<code>git switch</code>命令来切换分支 </p>
+<p> 创建并切换到新的<code>dev</code>分支，可以使用： </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git switch -c dev</span><br></pre></td></tr></table></figure>
+
+<p>直接切换到已有的<code>master</code>分支，可以使用：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git switch master</span><br></pre></td></tr></table></figure>
+
+<p>使用新的<code>git switch</code>命令，比<code>git checkout</code>要更容易理解。</p>
+<h3 id="命令总结"><a href="#命令总结" class="headerlink" title="命令总结"></a>命令总结</h3><p>Git鼓励大量使用分支：</p>
+<p>查看分支：<code>git branch</code></p>
+<p>创建分支：<code>git branch </code></p>
+<p>切换分支：<code>git checkout </code>或者<code>git switch </code></p>
+<p>创建+切换分支：<code>git checkout -b </code>或者<code>git switch -c </code></p>
+<p>合并某分支到当前分支：<code>git merge </code></p>
+<p>删除分支：<code>git branch -d </code></p>
+<h2 id="解决冲突"><a href="#解决冲突" class="headerlink" title="解决冲突"></a>解决冲突</h2><p>准备新的<code>feature1</code>分支，继续我们的新分支开发：</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027130450579.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027130450579.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027130450579"></p>
+<p>修改<code>readme.txt</code>最后一行</p>
+<p> 在<code>feature1</code>分支上提交</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027130621731.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027130621731.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027130621731"></p>
+<p>切换到<code>master</code>分支，修改<code>readme.txt</code>最后一行为别的内容，然后提交</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027130755666.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027130755666.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027130755666"></p>
+<p> 现在，<code>master</code>分支和<code>feature1</code>分支各自都分别有新的提交，变成了这样： </p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027130814425.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027130814425.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027130814425"></p>
+<p> Git无法执行“快速合并”，只能试图把各自的修改合并起来，但这种合并就可能会有冲突 </p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027130908476.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027130908476.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027130908476"></p>
+<p> Git告诉我们，<code>readme.txt</code>文件存在冲突，必须手动解决冲突后再提交。<code>git status</code>也可以告诉我们冲突的文件： </p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027130931402.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027130931402.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027130931402"></p>
+<p> 我们可以直接查看readme.txt的内容： </p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027131016245.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027131016245.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027131016245"></p>
+<p> Git用<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>，<code>=======</code>，<code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>标记出不同分支的内容，我们修改后保存，然后提交：</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027131149032.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027131149032.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027131149032"></p>
+<p>现在，<code>master</code>分支和<code>feature1</code>分支变成了下图所示：</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027131204136.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027131204136.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027131204136"></p>
+<p>用带参数的<code>git log</code>也可以看到分支的合并情况：</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027131309319.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027131309319.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027131309319"></p>
+<h2 id="分支策略"><a href="#分支策略" class="headerlink" title="分支策略"></a>分支策略</h2><p> 首先，<code>master</code>分支应该是非常稳定的，也就是仅用来发布新版本，平时不能在上面干活 </p>
+<p> 所以，团队合作的分支看起来就像这样 </p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027131459753.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027131459753.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027131459753"></p>
+<h1 id="标签管理"><a href="#标签管理" class="headerlink" title="标签管理"></a>标签管理</h1><h2 id="创建标签"><a href="#创建标签" class="headerlink" title="创建标签"></a>创建标签</h2><p> 首先，切换到需要打标签的分支上： </p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027131658489.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027131658489.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027131658489"></p>
+<p> 然后，敲命令<code>git tag </code>就可以打一个新标签： </p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027131722212.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027131722212.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027131722212"></p>
+<p> 可以用命令<code>git tag</code>查看所有标签： </p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027131746160.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027131746160.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027131746160"></p>
+<p>可以给历史的commit id加上标签</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027131848176.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027131848176.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027131848176"></p>
+<p> 注意，标签不是按时间顺序列出，而是按字母排序的。可以用<code>git show </code>查看标签信息： </p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027131920369.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027131920369.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027131920369"></p>
+<p> 还可以创建带有说明的标签，用<code>-a</code>指定标签名，<code>-m</code>指定说明文字： </p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027132037874.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027132037874.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027132037874"></p>
+<p> 用命令<code>git show </code>可以看到说明文字： </p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027132118336.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027132118336.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027132118336"></p>
+<h2 id="操作标签"><a href="#操作标签" class="headerlink" title="操作标签"></a>操作标签</h2><p>如果标签打错了，也可以删除：</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027132213310.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027132213310.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027132213310"></p>
+<p>因为创建的标签都只存储在本地，不会自动推送到远程。所以，打错的标签可以在本地安全删除。</p>
+<p>如果要推送某个标签到远程，使用命令<code>git push origin </code>：</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027132413256.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027132413256.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027132413256"></p>
+<p>如果标签已经推送到远程，要删除远程标签就麻烦一点，先从本地删除：</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027132447546.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027132447546.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027132447546"></p>
+<p>然后，从远程删除。删除命令也是push，但是格式如下：</p>
+<p><img src="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027132513867.png" class="lazyload" data-srcset="git%E7%9A%84%E4%BD%BF%E7%94%A8/image-20191027132513867.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20191027132513867"></p>
+<ul>
+<li>命令<code>git push origin </code>可以推送一个本地标签；</li>
+<li>命令<code>git push origin --tags</code>可以推送全部未推送过的本地标签；</li>
+<li>命令<code>git tag -d </code>可以删除一个本地标签；</li>
+<li>命令<code>git push origin :refs/tags/</code>可以删除一个远程标签。</li>
+</ul>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div>
-          <a class='readmore' href='../../../2024/09/28/git%E7%9A%84%E4%BD%BF%E7%94%A8/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-09-28T16:33:15+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2024年9月28日</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://aaronxwz.github.io/2024/09/28/hello-world/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="许老师的笔记">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="许老师的笔记">
-    <meta itemprop="description" content="技术小站">
-  </span>
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="../../../../tags/git/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>git</p></a></div>
+  <span hidden itemprop="keywords">git</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://aaronxwz.github.io/2024/09/28/git%E7%9A%84%E4%BD%BF%E7%94%A8/&title=git的使用 - 许老师的笔记&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://aaronxwz.github.io/2024/09/28/git%E7%9A%84%E4%BD%BF%E7%94%A8/&title=git的使用 - 许老师的笔记&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://aaronxwz.github.io/2024/09/28/git%E7%9A%84%E4%BD%BF%E7%94%A8/&title=git的使用 - 许老师的笔记&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
   
   
+
   
+    <div class="prev-next">
+      
+      
+        <a class='next' href='../hello-world/'>
+          <p class='title'>Hello World<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any ...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+      <meta itemprop="discussionUrl" content="#comments">
     </span>
-  
-  
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="../../../2024/09/28/hello-world/"  itemprop="url">
-        Hello World
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-28T16:07:22+08:00">2024-09-28</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='../../../2024/09/28/hello-world/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
 
-</div>
+    <div id="layoutHelper-comments"></div>
 
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
+  </article>
 
 
-	
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2675,134 +3001,48 @@ Qu...
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
     
-      
-        <a class='avatar flat-box rectangle' href='../../../about/'>
-          <img no-lazy src='https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">许老师的笔记</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="../../../atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="../../../mailto:me@xxx.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="../../../index.html"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="../../../categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/" href="../../../categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/"
-            active-action="action-categoriesE7BC96E7A88BE5BC80E58F91"
-            ><div class='name'>编程开发</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="../../../tags/git/" style="font-size: 14px; color: #999">git</a>
-    </div>
-  </section>
-
-
-    
-  
-
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#git%E7%9A%84%E8%AF%9E%E7%94%9F"><span class="toc-text">git的诞生</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E4%B8%AD%E5%BC%8F%E4%B8%8E%E5%88%86%E5%B8%83%E5%BC%8F"><span class="toc-text">集中式与分布式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E6%96%87%E4%BB%B6%E5%88%B0%E7%89%88%E6%9C%AC%E5%BA%93"><span class="toc-text">添加文件到版本库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80"><span class="toc-text">版本回退</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B7%A5%E4%BD%9C%E5%8C%BA%E5%92%8C%E6%9A%82%E5%AD%98%E5%8C%BA"><span class="toc-text">工作区和暂存区</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B7%A5%E4%BD%9C%E5%8C%BA"><span class="toc-text">工作区</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%88%E6%9C%AC%E5%BA%93"><span class="toc-text">版本库</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%A1%E7%90%86%E4%BF%AE%E6%94%B9"><span class="toc-text">管理修改</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%92%A4%E9%94%80%E4%BF%AE%E6%94%B9"><span class="toc-text">撤销修改</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6"><span class="toc-text">删除文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="toc-text">添加远程仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8E%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E5%85%8B%E9%9A%86"><span class="toc-text">从远程仓库克隆</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF"><span class="toc-text">创建与合并分支</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#switch"><span class="toc-text">switch</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93"><span class="toc-text">命令总结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E5%86%B2%E7%AA%81"><span class="toc-text">解决冲突</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E6%94%AF%E7%AD%96%E7%95%A5"><span class="toc-text">分支策略</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%A0%87%E7%AD%BE"><span class="toc-text">创建标签</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E6%A0%87%E7%AD%BE"><span class="toc-text">操作标签</span></a></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2830,13 +3070,14 @@ Qu...
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2845,14 +3086,14 @@ Qu...
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="half";
-      cover_wrapper.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
       scroll_down.style.display="none";
     
   
@@ -2946,7 +3187,7 @@ Qu...
 
 <!-- internal -->
 
-<script src="../../../../../../js/app.js"></script>
+<script src="../../../../../../../../js/app.js"></script>
 
 
 
@@ -2962,19 +3203,19 @@ Qu...
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("../../../js/plugins/tags/sites.js")
+        volantis.js("../../../../js/plugins/tags/sites.js")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("../../../js/plugins/tags/friends.js")
+        volantis.js("../../../../js/plugins/tags/friends.js")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("../../../js/plugins/tags/contributors.js")
+        volantis.js("../../../../js/plugins/tags/contributors.js")
       }
     
   };
@@ -3101,7 +3342,7 @@ Qu...
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("../../../js/search/hexo.js");
+    return volantis.js("../../../../js/search/hexo.js");
   }
 
   function loadSearchService() {
@@ -3350,7 +3591,7 @@ Qu...
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"许老师的笔记","url":"https://aaronxwz.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://aaronxwz.github.io/","sameAs":["https://github.com/volantis-x"],"description":"技术小站"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://aaronxwz.github.io/","name":"许老师的笔记"}},{"@type":"ListItem","position":2,"item":{"@id":"https://aaronxwz.github.io/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"https://aaronxwz.github.io/archives/2024/","name":"2024年"}},{"@type":"ListItem","position":4,"item":{"@id":"https://aaronxwz.github.io/archives/2024/9/","name":"9月"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"许老师的笔记","url":"https://aaronxwz.github.io/","keywords":null,"description":"技术小站","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://aaronxwz.github.io/","description":"技术小站"},"publisher":{"@type":"Organization","name":"许老师的笔记","url":"https://aaronxwz.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://aaronxwz.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"技术小站","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://aaronxwz.github.io/"},"publisher":{"@type":"Organization","name":"许老师的笔记","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"许老师的笔记","url":"https://aaronxwz.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://aaronxwz.github.io/","sameAs":["https://github.com/volantis-x"],"description":"技术小站"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://aaronxwz.github.io/","name":"许老师的笔记"}},{"@type":"ListItem","position":2,"item":{"@id":"https://aaronxwz.github.io/categories/编程开发/","name":"编程开发"}},{"@type":"ListItem","position":3,"item":{"@id":"https://aaronxwz.github.io/2024/09/28/git的使用/","name":"git的使用"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"许老师的笔记","url":"https://aaronxwz.github.io/","keywords":null,"description":"技术小站","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://aaronxwz.github.io/","description":"技术小站"},"publisher":{"@type":"Organization","name":"许老师的笔记","url":"https://aaronxwz.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://aaronxwz.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"git的使用","description":"技术小站","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://aaronxwz.github.io/2024/09/28/git%E7%9A%84%E4%BD%BF%E7%94%A8/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://aaronxwz.github.io/"},"publisher":{"@type":"Organization","name":"许老师的笔记","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://aaronxwz.github.io/2024/09/28/git%E7%9A%84%E4%BD%BF%E7%94%A8/","wordCount":0,"datePublished":"2024-09-28T08:33:25.000Z","dateModified":"2024-09-28T08:33:15.345Z","articleSection":"编程开发","keywords":"git","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
